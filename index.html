@@ -1,373 +1,157 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>MASH UP 2026 | 美容師セミナー大阪</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+JP:wght@400;500;700;900&family=Oswald:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; background: #ffffff; }
-    body { font-family: 'Noto Sans JP', sans-serif; background: #ffffff; color: #111; overflow-x: hidden; line-height: 1.7; }
-    img { max-width: 100%; display: block; }
-    a { color: inherit; text-decoration: none; }
 
-    /* LAYOUT */
-    .container { width: 100%; max-width: 720px; margin: 0 auto; padding: 0 20px; }
-    .container--wide { max-width: 960px; }
-    .section { padding: 80px 0; background: #ffffff; }
 
-    /* LABELS */
-    .eyebrow { font-family: 'Oswald', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.35em; color: #e01e37; text-transform: uppercase; margin-bottom: 10px; }
-    .sec-title { font-family: 'Bebas Neue', sans-serif; font-size: clamp(32px,7vw,52px); letter-spacing: 0.03em; line-height: 1.1; margin-bottom: 8px; color: #111; }
-    .divider { width: 32px; height: 2px; background: #e01e37; margin: 14px 0 40px; }
+2026.06.15 MON  |  OSAKA
+「AIに奪われない美容師」の正体
+技術 × 人間力 × 知る力　2026年、本当に必要なものを知る1日。
 
-    /* STICKY CTA */
-    .sticky { position: fixed; bottom: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); border-top: 1px solid #eee; padding: 12px 16px; display: none; gap: 10px; box-shadow: 0 -4px 24px rgba(0,0,0,0.08); }
-    .sticky.on { display: flex; }
-    .sticky a { flex: 1; text-align: center; padding: 14px 8px; font-family: 'Oswald',sans-serif; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; border-radius: 10px; }
-    .sticky .s-real { background: #e01e37; color: #fff; }
-    .sticky .s-online { background: transparent; color: #111; border: 1.5px solid #ddd; }
+リアル参加に申し込む
+【無料・先着100名】
+オンライン配信を予約
+【2,000円 / アーカイブ付き】
+PRODUCED BY 日本ママ美容師協会
+SPECIAL MESSAGE
+MASH UP 2026 に込めた想い
 
-    /* HERO */
-    .hero { background: #111; min-height: 100svh; display: flex; align-items: center; justify-content: center; padding: 80px 20px; position: relative; overflow: hidden; }
-    .hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1974') center/cover; opacity: 0.12; filter: grayscale(1); }
-    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.4) 50%, #0a0a0a 100%); }
-    .hero-inner { position: relative; z-index: 1; text-align: center; width: 100%; max-width: 600px; }
-    .hero-badge { display: inline-block; border: 1px solid rgba(224,30,55,0.5); color: #e87a87; font-family: 'Oswald',sans-serif; font-size: 13px; letter-spacing: 0.3em; padding: 8px 22px; border-radius: 100px; margin-bottom: 28px; }
-    .hero-title { font-family: 'Bebas Neue',sans-serif; font-size: clamp(44px,11vw,88px); color: #fff; line-height: 1.0; letter-spacing: 0.02em; margin-bottom: 20px; }
-    .hero-sub { display: block; font-family: 'Noto Sans JP',sans-serif; font-size: clamp(12px,3vw,15px); font-weight: 400; color: #999; letter-spacing: 0.2em; margin-top: 14px; line-height: 2.0; }
-    .hero-btns { display: flex; flex-direction: column; gap: 12px; align-items: center; margin-bottom: 48px; }
-    @media(min-width:520px){ .hero-btns { flex-direction: row; justify-content: center; } }
-    .btn { display: inline-block; font-family: 'Oswald',sans-serif; font-weight: 600; letter-spacing: 0.12em; border-radius: 10px; transition: all 0.22s; border: none; text-align: center; font-size: 15px; padding: 16px 32px; width: 100%; max-width: 260px; cursor: pointer; }
-    .btn-red { background: #e01e37; color: #fff; }
-    .btn-red:hover { background: #b01528; transform: translateY(-2px); }
-    .btn-wht { background: transparent; color: #fff; border: 1.5px solid rgba(255,255,255,0.3); }
-    .btn-wht:hover { border-color: #fff; transform: translateY(-2px); }
-    .btn small { display: block; font-size: 9px; font-weight: 400; opacity: 0.65; margin-top: 3px; letter-spacing: 0.05em; font-family: 'Noto Sans JP',sans-serif; }
-    .hero-credit { color: #444; font-size: 9px; letter-spacing: 0.4em; text-transform: uppercase; font-family: 'Oswald',sans-serif; }
+今回、MASHUPをこのテーマで開催することに、私はとても大きな意味を感じています。
+今、AIの進化は想像以上のスピードで進んでいますよね。美容業界でも、「この先どうなるんだろう」「このままでいいのかな」——そんな声を、私自身もたくさん聞いてきました。
+正直、AIってよくわからない。だからこそ、少し怖い。それは、ただの弱さではなく、ちゃんと未来を考えている証拠だと思っています。でも、最近強く感じているのは、知らないから怖いということ。
+カットの技術もそうですよね。知った瞬間から、物事の捉え方は大きく変わっていきます。今回のテーマは、「AIに奪われない美容師」の正体。
+これはAIと戦う話でも、すごい人の成功談でもありません。これからの時代、何が"選ばれる理由"になるのか——そのヒントを一人ひとりが持ち帰ってほしい。そんな想いで、このテーマを選びました。
 
-    /* MESSAGE */
-    .msg-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 24px; padding: clamp(28px,7vw,56px); }
-    .msg-lead { font-size: clamp(15px,3.5vw,18px); font-weight: 900; color: #111; line-height: 1.9; border-left: 3px solid #e01e37; padding-left: 18px; margin-bottom: 28px; }
-    .msg-body p { font-size: 14px; color: #333; line-height: 2.1; margin-bottom: 16px; }
-    .msg-body strong { color: #111; font-weight: 900; }
-    .msg-body .hl { color: #e01e37; font-weight: 700; }
-    .msg-author { display: flex; align-items: center; gap: 16px; margin-top: 32px; padding-top: 24px; border-top: 1px solid #eee; }
-    .msg-author img { width: 120px; height: 120px; border-radius: 50%; object-fit: cover; object-position: center 10%; border: 2px solid #eee; }
-    .msg-author-title { font-size: 11px; color: #777; letter-spacing: 0.06em; margin-top: 2px; }
-    .msg-author-name { font-family: 'Bebas Neue',sans-serif; font-size: 22px; letter-spacing: 0.05em; color: #111; }
+一般社団法人日本ママ美容師協会　代表理事
+ゆうこ
+PROBLEMS
+こんな悩み、ありませんか？
 
-    /* PROBLEMS */
-    .prob-list { display: flex; flex-direction: column; gap: 9px; }
-    .prob-item { display: flex; align-items: flex-start; gap: 12px; padding: 16px 18px; background: #fff; border: 1px solid #e8e8e8; border-radius: 16px; }
-    .prob-icon { width: 22px; height: 22px; border-radius: 50%; background: #fef0f2; color: #e01e37; display: flex; align-items: center; justify-content: center; font-size: 10px; font-weight: 900; flex-shrink: 0; margin-top: 1px; }
-    .prob-text { font-size: 14px; font-weight: 500; color: #333; line-height: 1.7; }
+✓
+AIが普及したら、美容師の仕事はどうなるか不安
+✓
+技術はあるのに、集客・リピートが伸び悩んでいる
+✓
+SNSを頑張っても、なかなか予約につながらない
+✓
+同業者との差別化ができていない気がする
+✓
+これからの美容師に何が必要なのか、具体的なヒントが欲しい
+✓
+子育てや家族との時間を大切にしながら、仕事も輝き続けたい
+SPEAKERS
+講師紹介
 
-    /* SPEAKERS */
-    .spk-grid { display: flex; flex-direction: column; gap: 18px; }
-    @media(min-width:640px){ .spk-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; } }
-    .spk-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 24px; padding: 24px 22px; transition: box-shadow 0.25s, transform 0.25s; }
-    .spk-card:hover { box-shadow: 0 10px 36px rgba(0,0,0,0.07); transform: translateY(-3px); }
-    .spk-top { display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
-    .spk-photo { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid #eee; flex-shrink: 0; }
-    .spk-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 5px; }
-    .spk-tag { font-size: 9px; font-family: 'Oswald',sans-serif; letter-spacing: 0.12em; background: #fef0f2; color: #e01e37; padding: 3px 8px; border-radius: 100px; font-weight: 600; }
-    .spk-name { font-family: 'Bebas Neue',sans-serif; font-size: 24px; letter-spacing: 0.05em; line-height: 1; color: #111; }
-    .spk-role { font-size: 11px; color: #777; letter-spacing: 0.04em; margin-top: 3px; }
-    .spk-desc { font-size: 13px; color: #333; line-height: 1.9; }
 
-    /* PROGRAM */
-    .prog-list { display: flex; flex-direction: column; gap: 7px; }
-    .prog-item { display: grid; grid-template-columns: 68px 1fr auto; gap: 14px; align-items: center; padding: 18px; background: #fff; border: 1px solid #e8e8e8; border-radius: 16px; transition: background 0.25s; }
-    .prog-item:hover { background: #111; }
-    .prog-time { font-family: 'Bebas Neue',sans-serif; font-size: 19px; color: #e01e37; letter-spacing: 0.05em; }
-    .prog-spk { font-size: 9px; color: #777; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700; margin-bottom: 3px; }
-    .prog-item:hover .prog-spk { color: #666; }
-    .prog-ttl { font-size: 14px; font-weight: 900; letter-spacing: 0.02em; color: #111; }
-    .prog-item:hover .prog-ttl { color: #fff; }
-    .prog-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 5px; }
-    .prog-tag { font-size: 9px; color: #999; background: #f3f3f3; padding: 2px 7px; border-radius: 100px; }
-    .prog-item:hover .prog-tag { background: rgba(255,255,255,0.08); color: #777; }
-    .prog-dur { font-size: 10px; font-weight: 700; color: #e01e37; background: #fef0f2; padding: 3px 9px; border-radius: 100px; white-space: nowrap; font-family: 'Oswald',sans-serif; }
-    .prog-item:hover .prog-dur { background: rgba(224,30,55,0.15); }
-    @media(max-width:480px){ .prog-item { grid-template-columns: 56px 1fr; } .prog-dur { display: none; } }
+オンラインサロン主宰
+カット講師
+住吉 望
+オンラインサロン主宰 / カット講師
+チェーン店の店長から業務委託美容師へ。Instagramでカット動画を発信しフォロワー急増。オンラインサロンを立ち上げ、全国の美容師に影響を与える。「知らないと損する」哲学のもと、AIカット実演、リアル赤ペン先生など、ここでしか見られないコンテンツを披露。圧倒的な技術と本質を突くトークで常識を覆します。
 
-    /* INFO */
-    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-    @media(max-width:480px){ .info-grid { grid-template-columns: 1fr; } }
-    .info-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 16px; padding: 22px 18px; }
-    .info-lbl { font-family: 'Oswald',sans-serif; font-size: 9px; letter-spacing: 0.3em; color: #777; text-transform: uppercase; margin-bottom: 10px; }
-    .info-val { font-weight: 900; font-size: clamp(14px,3vw,17px); line-height: 1.5; color: #111; }
-    .info-sub { font-size: 12px; color: #777; margin-top: 6px; line-height: 1.9; }
-    .price-free { font-family: 'Bebas Neue',sans-serif; font-size: 38px; color: #e01e37; letter-spacing: 0.05em; line-height: 1; }
-    .price-paid { font-family: 'Bebas Neue',sans-serif; font-size: 38px; letter-spacing: 0.05em; line-height: 1; color: #111; }
+CLUTCH創業者
+スタッフマネジメント
+濱 浩太朗
+株式会社 CLUTCH創業者
+美容室「CLUTCH」を経営し、全国15店舗・スタッフ総勢50名を束ねる。ママ美容師の雇用に積極的で、柔軟な働き方を実現。「人が辞めない店」を作る秘訣は、給料でも条件でもなく人間力。AI時代だからこそ、人と人との繋がりが大事。実例を交えた本音トークで、あなたの「当たり前」を問い直します。
 
-    /* ACCESS */
-    .acc-grid { display: flex; flex-direction: column; gap: 24px; }
-    @media(min-width:560px){ .acc-grid { flex-direction: row; align-items: flex-start; } }
-    .acc-info strong { font-size: 16px; font-weight: 900; display: block; margin-bottom: 12px; color: #111; }
-    .acc-info p { font-size: 13px; color: #444; line-height: 2.1; margin-bottom: 4px; }
-    .acc-link { display: inline-flex; align-items: center; gap: 5px; margin-top: 12px; font-size: 12px; font-family: 'Oswald',sans-serif; letter-spacing: 0.12em; color: #e01e37; font-weight: 600; }
-    .acc-link:hover { text-decoration: underline; }
-    .acc-map { flex-shrink: 0; width: 100%; border-radius: 16px; overflow: hidden; border: 1px solid #e8e8e8; aspect-ratio: 4/3; }
-    @media(min-width:560px){ .acc-map { width: 230px; } }
-    .acc-map iframe { width: 100%; height: 100%; border: none; display: block; }
+株式会社rink代表
+現役美容師
+みき
+株式会社rink代表
+現役の美容師として現場に立ちながら、2025年に会社を設立。美容室向けに低価格の音楽配信サービスを提供し、業界に革新をもたらす。「ママ美容師だから無理」という限界を決めず、ママ社長としても走り続ける、新しい働き方のロールモデルです。
+SCHEDULE
+Time Table
 
-    /* TESTIMONIALS */
-    .testi-grid { display: flex; flex-direction: column; gap: 12px; }
-    @media(min-width:560px){ .testi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; } }
-    .testi-card { background: #fff; border: 1px solid #e8e8e8; border-radius: 16px; padding: 24px 20px; }
-    .testi-q { font-family: 'Bebas Neue',sans-serif; font-size: 44px; color: #e01e37; opacity: 0.18; line-height: 0.9; margin-bottom: 8px; }
-    .testi-txt { font-size: 13px; line-height: 2.1; color: #333; margin-bottom: 18px; }
-    .testi-auth { border-top: 1px solid #eee; padding-top: 12px; }
-    .testi-name { font-weight: 900; font-size: 14px; color: #111; }
-    .testi-role { font-size: 11px; color: #777; margin-top: 3px; }
+10:30
+会場 / 受付
 
-    /* FAQ */
-    .faq-list { display: flex; flex-direction: column; gap: 9px; }
-    .faq-item { background: #fff; border: 1px solid #e8e8e8; border-radius: 16px; overflow: hidden; }
-    .faq-q { display: flex; align-items: flex-start; gap: 12px; padding: 18px; font-weight: 700; font-size: 14px; line-height: 1.7; color: #111; }
-    .faq-qm { font-family: 'Bebas Neue',sans-serif; font-size: 17px; color: #e01e37; flex-shrink: 0; line-height: 1.5; }
-    .faq-a { padding: 0 18px 16px 42px; font-size: 13px; color: #555; line-height: 2.0; border-top: 1px solid #f0f0f0; padding-top: 12px; }
+11:00
+セミナースタート
 
-    /* FINAL CTA */
-    .cta { background: #111; color: #fff; padding: 100px 20px; text-align: center; position: relative; overflow: hidden; }
-    .cta::before { content: ''; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); width: 600px; height: 600px; background: radial-gradient(circle, rgba(224,30,55,0.13) 0%, transparent 70%); pointer-events: none; }
-    .cta-title { font-family: 'Bebas Neue',sans-serif; font-size: clamp(38px,9vw,76px); line-height: 1.1; letter-spacing: 0.01em; margin-bottom: 12px; position: relative; color: #fff; }
-    .cta-title span { color: #e01e37; }
-    .cta-date { color: #555; font-size: 12px; letter-spacing: 0.25em; margin-bottom: 40px; position: relative; font-family: 'Oswald',sans-serif; }
-    .cta-btns { display: flex; flex-direction: column; gap: 12px; align-items: center; position: relative; }
-    @media(min-width:520px){ .cta-btns { flex-direction: row; justify-content: center; } }
-    .btn-cta-r { background: #e01e37; color: #fff; padding: 18px 40px; font-size: 15px; font-family: 'Oswald',sans-serif; font-weight: 700; letter-spacing: 0.12em; border-radius: 10px; transition: all 0.22s; width: 100%; max-width: 280px; display: block; box-shadow: 0 0 36px rgba(224,30,55,0.2); }
-    .btn-cta-r:hover { background: #b01528; transform: translateY(-2px); }
-    .btn-cta-w { background: transparent; color: #fff; border: 1.5px solid #333; padding: 17px 40px; font-size: 15px; font-family: 'Oswald',sans-serif; font-weight: 700; letter-spacing: 0.12em; border-radius: 10px; transition: all 0.22s; width: 100%; max-width: 280px; display: block; }
-    .btn-cta-w:hover { border-color: #fff; transform: translateY(-2px); }
-    .btn-cta-r small, .btn-cta-w small { display: block; font-size: 9px; font-weight: 400; opacity: 0.6; margin-top: 4px; font-family: 'Noto Sans JP',sans-serif; letter-spacing: 0.05em; }
+15:10
+懇親会
+—
+17:00
+終了
 
-    /* FOOTER */
-    footer { padding: 36px 20px; text-align: center; background: #fff; border-top: 1px solid #eee; }
-    footer p { font-size: 10px; color: #ccc; letter-spacing: 0.25em; text-transform: uppercase; font-family: 'Oswald',sans-serif; }
-    footer a { color: #bbb; font-size: 10px; letter-spacing: 0.2em; font-family: 'Oswald',sans-serif; margin-top: 10px; display: inline-block; }
-    footer a:hover { color: #e01e37; }
-  </style>
-</head>
-<body>
+EVENT INFO
+開催概要
 
-  <div class="sticky" id="sticky">
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPd4Un2HMHLUq9DtRA-XKqg5d5lxRJsoSSbbCgG9H_Evg-5Q/viewform" class="s-real">リアル参加（無料）</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPd4Un2HMHLUq9DtRA-XKqg5d5lxRJsoSSbbCgG9H_Evg-5Q/viewform" class="s-online">オンライン（2,000円）</a>
-  </div>
+DATE & TIME
+2026年6月15日（月）
+10:30 開場 / 11:00 スタート
+17:00 終了予定
+VENUE
+NORIBA10 umeda
+大阪市北区芝田1-1-3
+阪急阪神MEETS内
+阪急大阪梅田駅 2F中央改札口すぐ
+リアル参加
+FREE
+先着100名限定
+定員になり次第締め切り
+オンライン配信
+¥2,000
+アーカイブ視聴付き
+全国どこからでも参加可能
+ACCESS
+会場アクセス
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-inner">
-      <div class="hero-badge">2026.06.15 MON &nbsp;|&nbsp; OSAKA</div>
-      <h1 class="hero-title">
-        「AIに奪われない<br />美容師」の正体
-        <span class="hero-sub">技術 × 人間力 × 知る力<br />2026年、本当に必要なものを知る1日。</span>
-      </h1>
-      <div style="margin: 0 auto 40px; width: 100%; max-width: 320px; aspect-ratio: 9/16; border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5);">
-        <iframe src="https://www.youtube-nocookie.com/embed/l2kLqtC9Esk?autoplay=1&mute=1&loop=1&playlist=l2kLqtC9Esk&playsinline=1&rel=0" frameborder="0" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen style="width:100%;height:100%;border:none;"></iframe>
-      </div>
-      <div class="hero-btns">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPd4Un2HMHLUq9DtRA-XKqg5d5lxRJsoSSbbCgG9H_Evg-5Q/viewform" class="btn btn-red">リアル参加に申し込む<small>【無料・先着100名】</small></a>
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPd4Un2HMHLUq9DtRA-XKqg5d5lxRJsoSSbbCgG9H_Evg-5Q/viewform" class="btn btn-wht">オンライン配信を予約<small>【2,000円 / アーカイブ付き】</small></a>
-      </div>
-      <p class="hero-credit">Produced by 日本ママ美容師協会</p>
-    </div>
-  </section>
+NORIBA10 umeda
+〒530-0012 大阪市北区芝田1丁目1番3号「阪急阪神MEETS」内
+🚃 阪急大阪梅田駅 2階中央改札口を出てすぐ
+🚃 JR大阪駅 御堂筋口から徒歩約5分
+🚃 阪神大阪梅田駅 東出口から徒歩約8分
+↗ Google Map で見る 
 
-  <!-- MESSAGE -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Special Message</p>
-      <h2 class="sec-title">MASH UP 2026 に込めた想い</h2>
-      <div class="divider"></div>
-      <div class="msg-card">
-        <p class="msg-lead">今回、MASHUPをこのテーマで開催することに、私はとても大きな意味を感じています。</p>
-        <div class="msg-body">
-          <p>今、AIの進化は想像以上のスピードで進んでいますよね。美容業界でも、「この先どうなるんだろう」「このままでいいのかな」——そんな声を、私自身もたくさん聞いてきました。</p>
-          <p>正直、AIってよくわからない。だからこそ、少し怖い。それは、ただの弱さではなく、ちゃんと未来を考えている証拠だと思っています。でも、最近強く感じているのは、<strong>知らないから怖い</strong>ということ。</p>
-          <p>カットの技術もそうですよね。知った瞬間から、物事の捉え方は大きく変わっていきます。今回のテーマは、<span class="hl">「AIに奪われない美容師」の正体</span>。</p>
-          <p>これはAIと戦う話でも、すごい人の成功談でもありません。これからの時代、何が"選ばれる理由"になるのか——そのヒントを一人ひとりが持ち帰ってほしい。そんな想いで、このテーマを選びました。</p>
-        </div>
-        <div class="msg-author">
-          <img src="data:image/png;base64,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" alt="YUKO" />
-          <div>
-            <div class="msg-author-title">一般社団法人日本ママ美容師協会　代表理事</div>
-            <div class="msg-author-name">ゆうこ</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+VOICES
+業界からの推薦メッセージ
 
-  <!-- PROBLEMS -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Problems</p>
-      <h2 class="sec-title">こんな悩み、ありませんか？</h2>
-      <div class="divider"></div>
-      <div class="prob-list">
-        <div class="prob-item"><div class="prob-icon">✓</div><p class="prob-text">AIが普及したら、美容師の仕事はどうなるか不安</p></div>
-        <div class="prob-item"><div class="prob-icon">✓</div><p class="prob-text">技術はあるのに、集客・リピートが伸び悩んでいる</p></div>
-        <div class="prob-item"><div class="prob-icon">✓</div><p class="prob-text">SNSを頑張っても、なかなか予約につながらない</p></div>
-        <div class="prob-item"><div class="prob-icon">✓</div><p class="prob-text">同業者との差別化ができていない気がする</p></div>
-        <div class="prob-item"><div class="prob-icon">✓</div><p class="prob-text">これからの美容師に何が必要なのか、具体的なヒントが欲しい</p></div>
-        <div class="prob-item"><div class="prob-icon">✓</div><p class="prob-text">子育てや家族との時間を大切にしながら、仕事も輝き続けたい</p></div>
-      </div>
-    </div>
-  </section>
+"
+MASH UPは、ママ美容師さん達が学びと仲間に出会い、自分らしい働き方と未来を描ける貴重な場所だと思ってます。迷っている方こそ一歩踏み出してほしい。住吉さん・濱さんの実践と想いが、きっと次の挑戦への背中を押してくれます。
+中村 浩徳
+air chairグループ代表
+"
+「新しい視野を開拓する」——MASH UPを一言で表すとそんなところかと思います。将来がなかなか見えてこない、自分を進化させたいけどどうしたら良いかわからない、そんな時に、このお二人ならきっと新しいヒントを見事に見せてくれることでしょう。進んだ先にしか新しい未来は訪れないと思うので、少しでも気になった方はぜひ足を運んでみてください。
+甲斐 紀行
+株式会社 Lond Holdings 代表取締役
+"
+とある調査によると、ママは子育てに1日約7.8時間も費やしているそう。両立なんて「無理ゲー」とギブアップ寸前のあなたに、救世主が現る！MASH UPは、先輩ママからのアイディアや、オーナー視点からのアドバイスなど、働き方のヒントが飛び交うイベント。熱い講師のリアルな声から、理想の未来を描くきっかけを掴みに行ってみて！
+桑名 真理子
+美容エディター
+"
+MASH UPは、ママ美容師が抱える働き方・キャリア・家庭との両立を本音で共有し、次の一歩を見つけられる場です。僕が第一回で登壇して感じたのは、悩みが希望に変わる瞬間や、同じ価値観の仲間に出会える素晴らしさ。濱さんのビジョンと住吉さんの行動力——その言葉が、きっとあなたの背中を押してくれます。
+能勢 秀昭
+株式会社サクラビト 取締役社長
+"
+MASH UPは、本気で人生と仕事を変えたいママ美容師が集まる、とても熱量の高い場です。ぜひ気合いを入れて挑んでください（笑）講師お二人の言葉や在り方が、誰かの迷いを断ち、前へ進む力になります。一人でも多くのママ美容師の背中を押す時間になることを、楽しみにしています。
+森腰 菜々絵
+Capullo Group 代表
+"
+一人で抱え込まず支え合える仲間がいると実感し、自分の経験を次の世代に繋ぎたい想いがより強まりました。美容師の未来を一緒に良くしたい方、美容師人生をどう生きるか考えている方に、ぜひ参加してほしいです。
+伊藤 桂子
+Hair Salon Venus
+FAQ
+よくある質問
 
-  <!-- SPEAKERS -->
-  <section class="section">
-    <div class="container container--wide">
-      <p class="eyebrow">Speakers</p>
-      <h2 class="sec-title">講師紹介</h2>
-      <div class="divider"></div>
-      <div class="spk-grid">
-        <div class="spk-card">
-          <div class="spk-top">
-            <img src="data:image/png;base64,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" alt="住吉 望" class="spk-photo" />
-            <div>
-              <div class="spk-tags"><span class="spk-tag">オンラインサロン主宰</span><span class="spk-tag">カット講師</span></div>
-              <div class="spk-name">住吉 望</div>
-              <div class="spk-role">オンラインサロン主宰 / カット講師</div>
-            </div>
-          </div>
-          <p class="spk-desc">チェーン店の店長から業務委託美容師へ。Instagramでカット動画を発信しフォロワー急増。オンラインサロンを立ち上げ、全国の美容師に影響を与える。「知らないと損する」哲学のもと、AIカット実演、リアル赤ペン先生など、ここでしか見られないコンテンツを披露。圧倒的な技術と本質を突くトークで常識を覆します。</p>
-        </div>
-        <div class="spk-card">
-          <div class="spk-top">
-            <img src="data:image/png;base64,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" alt="濱 浩太朗" class="spk-photo" />
-            <div>
-              <div class="spk-tags"><span class="spk-tag">CLUTCH創業者</span><span class="spk-tag">スタッフマネジメント</span></div>
-              <div class="spk-name">濱 浩太朗</div>
-              <div class="spk-role">株式会社 CLUTCH創業者</div>
-            </div>
-          </div>
-          <p class="spk-desc">美容室「CLUTCH」を経営し、全国15店舗・スタッフ総勢50名を束ねる。ママ美容師の雇用に積極的で、柔軟な働き方を実現。「人が辞めない店」を作る秘訣は、給料でも条件でもなく人間力。AI時代だからこそ、人と人との繋がりが大事。実例を交えた本音トークで、あなたの「当たり前」を問い直します。</p>
-        </div>
-        <div class="spk-card">
-          <div class="spk-top">
-            <img src="data:image/png;base64,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" alt="みき" class="spk-photo" />
-            <div>
-              <div class="spk-tags"><span class="spk-tag">株式会社rink代表</span><span class="spk-tag">現役美容師</span></div>
-              <div class="spk-name">みき</div>
-              <div class="spk-role">株式会社rink代表</div>
-            </div>
-          </div>
-          <p class="spk-desc">現役の美容師として現場に立ちながら、2025年に会社を設立。美容室向けに低価格の音楽配信サービスを提供し、業界に革新をもたらす。「ママ美容師だから無理」という限界を決めず、ママ社長としても走り続ける、新しい働き方のロールモデルです。</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROGRAM -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Schedule</p>
-      <h2 class="sec-title">Time Table</h2>
-      <div class="divider"></div>
-      <div class="prog-list">
-        <div class="prog-item"><div class="prog-time">10:30</div><div><div class="prog-ttl">会場 / 受付</div></div><div></div></div>
-        <div class="prog-item"><div class="prog-time">11:00</div><div><div class="prog-ttl">セミナースタート</div></div><div></div></div>
-        <div class="prog-item"><div class="prog-time">15:10</div><div><div class="prog-ttl">懇親会</div></div><div class="prog-dur">—</div></div>
-        <div class="prog-item"><div class="prog-time">17:00</div><div><div class="prog-ttl">終了</div></div><div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- INFO -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Event Info</p>
-      <h2 class="sec-title">開催概要</h2>
-      <div class="divider"></div>
-      <div class="info-grid">
-        <div class="info-card"><div class="info-lbl">Date &amp; Time</div><div class="info-val">2026年6月15日（月）</div><div class="info-sub">10:30 開場 / 11:00 スタート<br />17:00 終了予定</div></div>
-        <div class="info-card"><div class="info-lbl">Venue</div><div class="info-val">NORIBA10 umeda</div><div class="info-sub">大阪市北区芝田1-1-3<br />阪急阪神MEETS内<br />阪急大阪梅田駅 2F中央改札口すぐ</div></div>
-        <div class="info-card"><div class="info-lbl">リアル参加</div><div class="price-free">FREE</div><div class="info-sub">先着100名限定<br />定員になり次第締め切り</div></div>
-        <div class="info-card"><div class="info-lbl">オンライン配信</div><div class="price-paid">¥2,000</div><div class="info-sub">アーカイブ視聴付き<br />全国どこからでも参加可能</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ACCESS -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">Access</p>
-      <h2 class="sec-title">会場アクセス</h2>
-      <div class="divider"></div>
-      <div class="acc-grid">
-        <div class="acc-info">
-          <strong>NORIBA10 umeda</strong>
-          <p>〒530-0012<br />大阪市北区芝田1丁目1番3号<br />「阪急阪神MEETS」内</p>
-          <p>🚃 阪急大阪梅田駅 2階中央改札口を出てすぐ<br />🚃 JR大阪駅 御堂筋口から徒歩約5分<br />🚃 阪神大阪梅田駅 東出口から徒歩約8分</p>
-          <a href="https://www.google.com/maps/place/NORIBA10+Umeda/@34.704733,135.4963661,17z" target="_blank" class="acc-link">↗ Google Map で見る</a>
-        </div>
-        <div class="acc-map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.1!2d135.4989464!3d34.704733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e7002d7e708f%3A0x33cdcc9aef368fb4!2sNORIBA10%20Umeda!5e0!3m2!1sja!2sjp!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="section">
-    <div class="container container--wide">
-      <p class="eyebrow">Voices</p>
-      <h2 class="sec-title">業界からの推薦メッセージ</h2>
-      <div class="divider"></div>
-      <div class="testi-grid">
-        <div class="testi-card"><div class="testi-q">"</div><p class="testi-txt">MASH UPは、ママ美容師さん達が学びと仲間に出会い、自分らしい働き方と未来を描ける貴重な場所だと思ってます。迷っている方こそ一歩踏み出してほしい。住吉さん・濱さんの実践と想いが、きっと次の挑戦への背中を押してくれます。</p><div class="testi-auth"><div class="testi-name">中村 浩徳</div><div class="testi-role">air chairグループ代表</div></div></div>
-        <div class="testi-card"><div class="testi-q">"</div><p class="testi-txt">「新しい視野を開拓する」——MASH UPを一言で表すとそんなところかと思います。将来がなかなか見えてこない、自分を進化させたいけどどうしたら良いかわからない、そんな時に、このお二人ならきっと新しいヒントを見事に見せてくれることでしょう。進んだ先にしか新しい未来は訪れないと思うので、少しでも気になった方はぜひ足を運んでみてください。</p><div class="testi-auth"><div class="testi-name">甲斐 紀行</div><div class="testi-role">株式会社 Lond Holdings 代表取締役</div></div></div>
-        <div class="testi-card"><div class="testi-q">"</div><p class="testi-txt">とある調査によると、ママは子育てに1日約7.8時間も費やしているそう。両立なんて「無理ゲー」とギブアップ寸前のあなたに、救世主が現る！MASH UPは、先輩ママからのアイディアや、オーナー視点からのアドバイスなど、働き方のヒントが飛び交うイベント。熱い講師のリアルな声から、理想の未来を描くきっかけを掴みに行ってみて！</p><div class="testi-auth"><div class="testi-name">桑名 真理子</div><div class="testi-role">美容エディター</div></div></div>
-        <div class="testi-card"><div class="testi-q">"</div><p class="testi-txt">MASH UPは、ママ美容師が抱える働き方・キャリア・家庭との両立を本音で共有し、次の一歩を見つけられる場です。僕が第一回で登壇して感じたのは、悩みが希望に変わる瞬間や、同じ価値観の仲間に出会える素晴らしさ。濱さんのビジョンと住吉さんの行動力——その言葉が、きっとあなたの背中を押してくれます。</p><div class="testi-auth"><div class="testi-name">能勢 秀昭</div><div class="testi-role">株式会社サクラビト 取締役社長</div></div></div>
-        <div class="testi-card"><div class="testi-q">"</div><p class="testi-txt">MASH UPは、本気で人生と仕事を変えたいママ美容師が集まる、とても熱量の高い場です。ぜひ気合いを入れて挑んでください（笑）講師お二人の言葉や在り方が、誰かの迷いを断ち、前へ進む力になります。一人でも多くのママ美容師の背中を押す時間になることを、楽しみにしています。</p><div class="testi-auth"><div class="testi-name">森腰 菜々絵</div><div class="testi-role">Capullo Group 代表</div></div></div>
-        <div class="testi-card"><div class="testi-q">"</div><p class="testi-txt">一人で抱え込まず支え合える仲間がいると実感し、自分の経験を次の世代に繋ぎたい想いがより強まりました。美容師の未来を一緒に良くしたい方、美容師人生をどう生きるか考えている方に、ぜひ参加してほしいです。</p><div class="testi-auth"><div class="testi-name">伊藤 桂子</div><div class="testi-role">Hair Salon Venus</div></div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section">
-    <div class="container">
-      <p class="eyebrow">FAQ</p>
-      <h2 class="sec-title">よくある質問</h2>
-      <div class="divider"></div>
-      <div class="faq-list">
-        <div class="faq-item"><div class="faq-q"><span class="faq-qm">Q.</span><span>美容師でなくても参加できますか？</span></div><div class="faq-a">はい、美容業界に関わるすべての方にご参加いただけます。美容師、アシスタント、サロンオーナー、業界関係者など、どなたでもお越しください。</div></div>
-        <div class="faq-item"><div class="faq-q"><span class="faq-qm">Q.</span><span>リアル参加は本当に無料ですか？</span></div><div class="faq-a">はい、完全無料です。先着100名様限定となっておりますので、お早めにお申し込みください。</div></div>
-        <div class="faq-item"><div class="faq-q"><span class="faq-qm">Q.</span><span>オンライン配信はアーカイブで後から見られますか？</span></div><div class="faq-a">はい、オンライン参加の方はアーカイブ動画を一定期間ご視聴いただけます。当日参加できない方もぜひお申し込みください。</div></div>
-        <div class="faq-item"><div class="faq-q"><span class="faq-qm">Q.</span><span>子連れでの参加は可能ですか？</span></div><div class="faq-a">ママ美容師の方も多くご参加いただいております。会場の詳細については申し込み後にご案内するメールをご確認ください。</div></div>
-        <div class="faq-item"><div class="faq-q"><span class="faq-qm">Q.</span><span>キャンセルはできますか？</span></div><div class="faq-a">ご都合が悪くなった場合は、お早めにご連絡ください。キャンセル方法については申し込み確認メールに記載しております。</div></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL CTA -->
-  <section class="cta" id="apply">
-    <div class="cta-title">あなたの人生を変える、<br /><span>特別な1日</span>を。</div>
-    <p class="cta-date">2026年6月15日（月）大阪梅田</p>
-    <div class="cta-btns">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPd4Un2HMHLUq9DtRA-XKqg5d5lxRJsoSSbbCgG9H_Evg-5Q/viewform" class="btn-cta-r">リアル参加に申し込む<small>【無料・先着100名】</small></a>
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPd4Un2HMHLUq9DtRA-XKqg5d5lxRJsoSSbbCgG9H_Evg-5Q/viewform" class="btn-cta-w">オンライン配信を予約<small>【2,000円 / アーカイブ付き】</small></a>
-    </div>
-    <p style="margin-top:56px;font-size:9px;letter-spacing:0.5em;color:#333;font-family:'Oswald',sans-serif;">Produced by 日本ママ美容師協会</p>
-  </section>
-
-  <footer>
-    <p>© 2026 MASH UP 2026 Seminar. All Rights Reserved.</p>
-    <a href="tokusho.html" target="_blank">特定商取引法に基づく表記</a>
-  </footer>
-
-  <script>
-    const sticky = document.getElementById('sticky');
-    window.addEventListener('scroll', () => { sticky.classList.toggle('on', window.scrollY > 500); });
-  </script>
-</body>
-</html>
+Q.
+美容師でなくても参加できますか？
+はい、美容業界に関わるすべての方にご参加いただけます。美容師、アシスタント、サロンオーナー、業界関係者など、どなたでもお越しください。
+Q.
+リアル参加は本当に無料ですか？
+はい、完全無料です。先着100名様限定となっておりますので、お早めにお申し込みください。
+Q.
+オンライン配信はアーカイブで後から見られますか？
+はい、オンライン参加の方はアーカイブ動画を一定期間ご視聴いただけます。当日参加できない方もぜひお申し込みください。
+Q.
+子連れでの参加は可能ですか？
+ママ美容師の方も多くご参加いただいております。会場の詳細については申し込み後にご案内するメールをご確認ください。
+Q.
+キャンセルはできますか？
+ご都合が悪くなった場合は、お早めにご連絡ください。キャンセル方法については申し込み確認メールに記載しております。
+あなたの人生を変える、特別な1日を。
+2026年6月15日（月）大阪梅田
+リアル参加に申し込む
+【無料・先着100名】
+オンライン配信を予約
+【2,000円 / アーカイブ付き】
+Produced by 日本ママ美容師協会
+© 2026 MASH UP 2026 SEMINAR. ALL RIGHTS RESERVED.
+特定商取引法に基づく表記 
